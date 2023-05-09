@@ -1,0 +1,74 @@
+#container {
+  height: 500px;
+  position: absolute;
+  width: 100%;
+}
+#container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to bottom, rgb(244, 135, 116), white);
+  z-index: -1;
+  opacity: 0.5;
+}
+.box-container {
+  position: absolute;
+  top: 50px;
+  font-weight: 300;
+  left: 20%;
+  right: 20%;
+  padding: 10px;
+}
+.center {
+  text-align: center;
+}
+.h-primary {
+  font-size: 2rem;
+}
+.loremWord {
+  font-weight: 300;
+  line-height: 60px;
+  text-align: center;
+}
+.about-section {
+  position: absolute;
+  top: 584px;
+  width: 100%;
+  height: 500px;
+}
+.about-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to top, rgb(244, 135, 116), white);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.images-div {
+  height: 214px;
+  width: 80%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  column-gap: 20px;
+  justify-content: flex-start;
+}
+.images-div img {
+  height: 200px;
+  box-shadow: 15px -20px 10px -2px rgba(156, 148, 148, 0.5);
+}
+.cardsList {
+  position: absolute;
+  top: 1084px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  justify-content: center;
+  gap: 30px;
+  background-color: #000;
+  color: white;
+  padding: 10px 5%;
+}
